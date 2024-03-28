@@ -1,17 +1,17 @@
 * {
-    font-family: Helvetica;
-}
-
-.container {
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  .container {
     height: 530px;
     width: 600px;
     display: flex;
     background-color: lightgrey;
     border-radius: 6px;
     text-align: center;
-}
-
-.toggle {
+  }
+  
+  .toggle {
     text-align: center;
     width: 31%;
     display: flex;
@@ -19,22 +19,22 @@
     border-radius: 5px;
     padding: 12px;
     margin: 0 0 6px 70px;
-}
-
-#togglehelp {
+  }
+  
+  #togglehelp {
     margin: 260px 0 6px 20px;
-}
-
-.toggle:hover {
+  }
+  
+  .toggle:hover {
     background-color: #cccf;
     cursor: pointer;
-}
-
-#column-right {
+  }
+  
+  #column-right {
     padding: 20px;
-}
-
-#displayA {
+  }
+  
+  #displayA {
     width: 200px;
     height: 30px;
     background-color: white;
@@ -42,22 +42,22 @@
     text-align: center;
     margin: 10px 10px 6px 55px;
     padding-top: 10px;
-}
-
-.image {
+  }
+  
+  .image {
     width: 300px;
     height: 400px;
     background: url("https://www.anaheim.net/ImageRepository/Document?documentID=49397") no-repeat;
     background-size: cover;
     display: inline-block;
-}
-
-.image:hover {
-    background: url("https://media.villagepreservation.org/wp-content/uploads/2020/06/15023110/Screen-Shot-2020-05-19-at-3.52.57-PM.png") no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.column {
-    flex: 60%;
-}
+  }
+  
+  .image:hover {
+      background: url("https://media.villagepreservation.org/wp-content/uploads/2020/06/15023110/Screen-Shot-2020-05-19-at-3.52.57-PM.png") no-repeat;
+      background-size: cover;
+      cursor: pointer;
+  }
+  
+  .column {
+    flex: 50%;
+  }
