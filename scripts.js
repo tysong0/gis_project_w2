@@ -1,4 +1,4 @@
-/*Set font*/
+/*Set all text to bold font*/
 $('#displayA').css({ "font-weight": "bold" });
 
 /*Light and Dark mode toggles*/
