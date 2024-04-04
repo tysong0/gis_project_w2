@@ -1,1 +1,1 @@
-The first webpage that we make for the GIS webmapping course
+The first webpage that we've built for the GIS webmapping course
