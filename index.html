@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- html head -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML5 Boilerplate</title>
+    <title>Pop-up Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<!-- body -->
 <body>
     <div class="container">
+        <!-- Left Page Column -->
         <div id="column-left" class="column">
             <h2>Q: Where is our lecture room?</h2>
             <div class="toggle" id="toggleA">
-                Dark Mode
+                Dark Mode Switch
             </div>
             <div class="toggle" id="toggleB">
-                Light Mode
+                Toggle Hints
             </div>
             <div class="toggle" id="togglehelp">
                 <a href="https://nyu.edu" target="_blank"><b>About NYU</b></a>
             </div>
         </div>
+        <!-- Right page column -->
         <div id="column-right" class="column">
             <b><i>Hover over the image to see the answer.</i></b>
             <img id="imageA" class="image" />
@@ -29,6 +33,28 @@
             <div id="displayA">
                 Still remember?
             </div>
+
+            <!-- The draggable element -->
+            <div id="test1">
+                <div id="test1header">
+                Drag this bar to move
+                </div>
+                <b>Some Hints:</b>
+                <div class="hints">
+                A. It's a little walking from the main campus
+                </div>
+                <div class="hints">
+                B. It's near an express train stop
+                </div>
+                <div class="hints">
+                C. It's next door to a famous design school
+                </div>
+                <div id="hintsend">
+                Good enough?
+                </div>    
+            </div>
+
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

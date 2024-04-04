@@ -1,63 +1,177 @@
 * {
-    font-family: 'Tahoma', sans-serif;
-  }
-  
-  .container {
-    height: 530px;
-    width: 600px;
-    display: flex;
-    background-color: lightgrey;
-    border-radius: 6px;
-    text-align: center;
-  }
-  
-  .toggle {
-    text-align: center;
-    width: 31%;
-    display: flex;
-    background-color: white;
-    border-radius: 5px;
-    padding: 12px;
-    margin: 0 0 6px 70px;
-  }
+  font-family: 'Tahoma', sans-serif;
+}
 
-  #togglehelp {
-    margin: 260px 0 6px 20px;
-  }
-  
-  .toggle:hover {
-    background-color: #cccf;
-    cursor: pointer;
-  }
-  
-  #column-right {
-    padding: 20px;
-  }
-  
-  #displayA {
-    width: 200px;
-    height: 30px;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-    margin: 10px 10px 6px 55px;
-    padding-top: 10px;
-  }
-  
-  .image {
-    width: 300px;
-    height: 400px;
-    background: url("https://www.anaheim.net/ImageRepository/Document?documentID=49397") no-repeat;
-    background-size: cover;
-    display: inline-block;
-  }
-  
-  .image:hover {
-      background: url("https://media.villagepreservation.org/wp-content/uploads/2020/06/15023110/Screen-Shot-2020-05-19-at-3.52.57-PM.png") no-repeat;
-      background-size: cover;
-      cursor: pointer;
-  }
-  
-  .column {
-    flex: 50%;
-  }
+/*webpage bg*/
+body {
+  background-color: white;
+}
+
+/*webpage bg-darkmode*/
+body.darkmode {
+  background-color: black;
+}
+
+/*container*/
+.container {
+  height: auto;
+  width: auto;
+  max-width: 700px;
+  display: flex;
+  background-color: lightgrey;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/*container bg-darkmode*/
+.container.darkmode {
+  background-color: rgb(133, 132, 132);
+}
+
+/*elements*/
+.column-left {
+  flex: 50%;
+  padding: 20px;
+}
+
+/*
+.toggle {
+  text-align: center;
+  width: 31%;
+  flex: 50%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 0 0 6px 70px;
+}
+*/
+
+/* button */
+.toggle {
+  appearance: none;
+  background-color: #617391;
+  border: 2px solid #00000000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 17px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 6px 0px;
+  min-height: 55px;
+  min-width: 0;
+  max-width: 200px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.toggle:disabled {
+  pointer-events: none;
+}
+
+.toggle:hover {
+  background-color: #617391;
+  box-shadow: rgba(0, 0, 0, 0.148) 1px 20px 15px;
+  border: 2px solid #0e0e0f54;
+  border-radius: 6px;
+  transform: translate3D(-1px, -3px, 0);
+}
+
+.toggle:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.toggle.darkmode {
+  background-color: #4d5767;
+}
+
+#togglehelp {
+  margin: 210px 0 6px 0px;
+
+}
+
+.toggle:hover {
+  background-color: #cccf;
+  cursor: pointer;
+}
+
+#column-right {
+  flex: 50%;
+  padding: 20px;
+}
+
+#test1header {
+  font-size: small;
+  color: rgba(255, 255, 255, 0.68);
+  background: rgba(38, 43, 47, 0.629);
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.hints {
+  text-align: left;
+}
+
+#hintsend {
+  text-align: right;
+}
+
+#displayA {
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  align-self: center;
+  margin: 10px 0px 6px 55px;
+  padding-top: 10px;
+}
+
+#displayA.darkmode {
+  background-color: lightgray;
+}
+
+.image {
+  width: 300px;
+  height: 400px;
+  background: url("https://www.anaheim.net/ImageRepository/Document?documentID=49397") no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.image:hover {
+  background: url("https://media.villagepreservation.org/wp-content/uploads/2020/06/15023110/Screen-Shot-2020-05-19-at-3.52.57-PM.png") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.column {
+  flex: 50%;
+}
+
+/*the test movable element*/
+#test1 {
+  position: absolute;
+  margin: auto;
+  height: 170px;
+  width: 210px;
+  text-align: center;
+  padding: 10px;
+  background: rgba(134, 203, 255, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+}
